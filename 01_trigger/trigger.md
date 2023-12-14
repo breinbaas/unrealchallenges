@@ -67,3 +67,4 @@ Mission accomplished.. next!
 
 **Note** There are some things that could be improved. Now any object entering the trigger will trigger the objects to fall down, so NOT only the player. You could avoid this by maybe adding a tag to the player and check the tag of the object that entered the trigger. Also note that casting to ```BP_Drop``` could go wrong if I picked another blueprint class as part of the connected objects. In that case it would be a good idea to connect to the ```Cast Failed``` flow and maybe show a debug error.
 
+[Back to all challenges](../README.md)
