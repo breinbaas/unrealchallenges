@@ -1,3 +1,6 @@
+## Prologue
+I have created these challenges to learn Unreal Engine so I definitely am not sure if what I present is the best way to solve the challenge. If you find better solutions I'd be happy to hear about it!
+
 # Challenge 02 - Keyboard and animation
 
 My second challenge deals with key presses and starting a new animation based on the key press. So for this challenge I chose to listen to key ```F``` and if that is pressed I want my character to play an animation I downloaded from [mixamo](https://www.mixamo.com/). I will show you the steps to do this here.
@@ -98,6 +101,8 @@ To make sure it executes I have added a pin to the ```Sequence``` and connected 
 
 ![only when standing still](15.png)
 
+We now only salute if our ground speed is zero.
+
 Again, don't forget to connect the execution pin to the ```Sequence``` and now it works!
 
 [![Watch the video](https://img.youtube.com/vi/xiz8pegyPQA/default.jpg)](https://www.youtube.com/watch?v=xiz8pegyPQA)
@@ -107,6 +112,7 @@ Again, don't forget to connect the execution pin to the ```Sequence``` and now i
 So yes, it works but I am not really happy because there still are two things to solve;
 * A) if you press F while running the animation will start as soon as you stop running, I want it to only start if you press F while not running
 * B) if you start running during the animation and stop again, the animation will restart which makes sense because the ```IsSaluting``` property will be set to false **after the timer has ended** So again it would be nice to see if it is possible to respond to the end of the animation
+* C) I am guessing that we could salute during falling (not tested it) because our groundspeed would be zero.. well.. falling and saluting before you hit the ground is not a bad way to go ;-)
 
 That said, I am happy with the result and will fix these bugs later or never ;-)
 
