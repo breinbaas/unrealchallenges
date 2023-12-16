@@ -1,7 +1,7 @@
 ## Prologue
 I have created these challenges to learn Unreal Engine so I definitely am not sure if what I present is the best way to solve the challenge. If you find better solutions I'd be happy to hear about it!
 
-## What I learned with this challenge
+## What I learned from this challenge
 Converting and using mixamo animations, using the input system, using the animation states, accessing player properties
 
 # Challenge 02 - Keyboard and animation
