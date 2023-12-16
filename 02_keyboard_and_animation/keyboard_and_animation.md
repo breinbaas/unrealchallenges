@@ -16,7 +16,7 @@ Let's get going!
 
 Ok, so I really upped the challenge with this one.. it wasn't easy to solve but it worked! My starting point was the 3rd person template with starter content. Now we already have a character, some animations, an animation controller and a input method. Let's take it from there.
 
-* Get a new animation from [mixamo](https://www.mixamo.com/) 
+### Get a new animation from [mixamo](https://www.mixamo.com/) 
 
 Unfortunately it is not possible to directly download an animation and expect it to work for Unreal. I found this really useful video about a [mixamo converter](https://www.youtube.com/watch?v=nYVjpHlabVM&ab_channel=TerribilisStudio) which does the job. I will not explain it here because the video is short and tells you how to do it but I will link to this [download](Salute.UE.fbx) with the converted animation that you can use directly in UE5. Note that I do not take any responsibility for corrupt files or the software from terribilis studio (and don't worry, the software is legit or just use your anti virus software)
 
@@ -24,7 +24,7 @@ Once I had the animation I added it to the ```Content | Characters | Mannequins 
 
 ![Adding the animation](04.png)
 
-* Adding the key press
+### Adding the key press
 
 I want my character to play the ```salute``` animation if I press the F-key. If you look up some tutorials there are ways to directly link to a key press but I want to make use of the already available ```IMC_Default``` class which you can find under ```Content | ThirdPerson | Input```. You can add new key inputs in the ```Actions``` map by creating a new ```Input Action```. 
 
@@ -34,7 +34,7 @@ I called mine ```IA_Salute```. Next up I entered the ```IMC_Default```, added a 
 
 ![Assigning the new key combination](03.gif)
 
-* Adding the saluting state to my character
+### Adding the saluting state to my character
 
 The next idea was to somehow tell my character that is was saluting or not. In ```BP_ThirdPersonCharacter``` which is the character we are controlling I added a new variable called ```IsSaluting``` and put this as a boolean (true / false) type. 
 
@@ -80,7 +80,7 @@ Now we assign the transition from ```Saluting``` to ```Idle``` by clicking on th
 
 That was easy but how do we connect the player ```IsSaluting``` property to the animationblueprint ```IsSaluting``` property?
 
-* Start and end the animation
+### Start and end the animation
 
 To connect the player with the animation player and tell the animation player when the player has pressed the 'salute' key we need to go to the ```Event Graph``` of the animation player. Note that there is already some code there and we will build upon that.
 
@@ -102,7 +102,7 @@ Again, don't forget to connect the execution pin to the ```Sequence``` and now i
 
 [![Watch the video](https://img.youtube.com/vi/xiz8pegyPQA/default.jpg)](https://www.youtube.com/watch?v=xiz8pegyPQA)
 
-## TODO
+### TODO
 
 So yes, it works but I am not really happy because there still are two things to solve;
 * A) if you press F while running the animation will start as soon as you stop running, I want it to only start if you press F while not running
