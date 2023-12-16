@@ -32,7 +32,7 @@ I want my character to play the ```salute``` animation if I press the F-key. If 
 
 I called mine ```IA_Salute```. Next up I entered the ```IMC_Default```, added a mapping (using the plus sign) and selected the ```IA_Salute``` input action and assigned the F key by clicking on the keyboard icon (to start listening to input) and pressing the F-key.
 
-![Assigning the new key combination](03.gif)
+![Assigning the new key combination](03.png)
 
 ### Adding the saluting state to my character
 
