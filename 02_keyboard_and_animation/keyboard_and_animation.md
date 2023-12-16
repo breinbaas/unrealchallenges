@@ -1,6 +1,9 @@
 ## Prologue
 I have created these challenges to learn Unreal Engine so I definitely am not sure if what I present is the best way to solve the challenge. If you find better solutions I'd be happy to hear about it!
 
+## What I learned with this challenge
+Converting and using mixamo animations, using the input system, using the animation states, accessing player properties
+
 # Challenge 02 - Keyboard and animation
 
 My second challenge deals with key presses and starting a new animation based on the key press. So for this challenge I chose to listen to key ```F``` and if that is pressed I want my character to play an animation I downloaded from [mixamo](https://www.mixamo.com/). I will show you the steps to do this here.
