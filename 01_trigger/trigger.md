@@ -1,6 +1,9 @@
 ## Prologue
 I have created these challenges to learn Unreal Engine so I definitely am not sure if what I present is the best way to solve the challenge. If you find better solutions I'd be happy to hear about it!
 
+## What I learned from this challenge
+Setting properties to public, working with arrays, casting, how to work with physics and collisions
+
 # Challenge 01 - Trigger
 
 My first challenge is to create a trigger. The idea is to create a cube that acts like a trigger and if the user enters the area it should make objects that hang in the sky fall down. Should be ok, right?
